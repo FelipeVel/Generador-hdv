@@ -24,19 +24,6 @@ $(document).ready(function(){
         localStorage.setItem("bachillerato", bachillerato);
         localStorage.setItem("primaria", primaria);
         localStorage.setItem("experiencia", empresa+" - "+cargo);
-
-        document.getElementById("nombretxt").value ="";
-        document.getElementById("apellidotxt").value = "";
-        document.getElementById("img").src = "";
-        document.getElementById("documentotxt").value="";
-        document.getElementById("edadtxt").value="";
-        document.getElementById("correotxt").value="";
-        document.getElementById("telefonotxt").value="";
-        document.getElementById("universidadtxt").value="";
-        document.getElementById("bachilleratotxt").value="";
-        document.getElementById("primariatxt").value="";
-        document.getElementById("empresatxt").value="";
-        document.getElementById("cargotxt").value="";
     });
 });
 
