@@ -10,6 +10,8 @@ $(document).ready(function(){
         var universidad = document.getElementById("universidadtxt").value;
         var bachillerato = document.getElementById("bachilleratotxt").value;
         var primaria = document.getElementById("primariatxt").value;
+        var empresa = document.getElementById("empresatxt").value;
+        var cargo = document.getElementById("cargotxt").value;
 
         localStorage.setItem("nombre", nombre);
         localStorage.setItem("apellido", apellido);
@@ -21,6 +23,7 @@ $(document).ready(function(){
         localStorage.setItem("universidad", universidad);
         localStorage.setItem("bachillerato", bachillerato);
         localStorage.setItem("primaria", primaria);
+        localStorage.setItem("experiencia", empresa+" - "+cargo);
 
         document.getElementById("nombretxt").value ="";
         document.getElementById("apellidotxt").value = "";
@@ -32,6 +35,8 @@ $(document).ready(function(){
         document.getElementById("universidadtxt").value="";
         document.getElementById("bachilleratotxt").value="";
         document.getElementById("primariatxt").value="";
+        document.getElementById("empresatxt").value="";
+        document.getElementById("cargotxt").value="";
     });
 });
 
@@ -47,6 +52,7 @@ $(document).ready(function(){
         var universidad = localStorage.getItem("universidad");
         var bachillerato = localStorage.getItem("bachillerato");
         var primaria = localStorage.getItem("primaria");
+        var experiencia = localStorage.getItem("experiencia");
 
         document.getElementById("nombre").innerHTML = nombre;
         document.getElementById("apellido").innerHTML = apellido;
@@ -58,6 +64,13 @@ $(document).ready(function(){
         document.getElementById("universidad").innerHTML = universidad;
         document.getElementById("bachillerato").innerHTML = bachillerato;
         document.getElementById("primaria").innerHTML = primaria;
+        document.getElementById("experiencia").innerHTML = experiencia;
+    });
+});
+
+$(document).ready(function(){
+    $('#boton-limpiar').click(function(){
+        localStorage.clear();
     });
 });
 
