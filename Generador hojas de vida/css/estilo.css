@@ -1,0 +1,16 @@
+header {
+  background: #886E0F;
+}
+body{
+	background: #B2A67B;
+}
+img{
+	width: 150 px;
+	height: 150 px;
+}
+td{
+	vertical-align: top;
+}
+table{
+	border-spacing: 30px 3px;
+}
